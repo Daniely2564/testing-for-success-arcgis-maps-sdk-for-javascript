@@ -10,6 +10,7 @@ import DataEntry from "./components/DataEntry";
 import { loadObservations, saveObservation } from "./api/fetchData";
 import { Observation, Location } from "./types";
 
+// TODO! Delete this line
 function App() {
   const [currentPoint, setCurrentPoint] = useState<Location | null>(null);
   const [observations, setObservations] = useState<Observation[]>([]);
