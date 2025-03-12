@@ -14,6 +14,7 @@ function App() {
   const [currentPoint, setCurrentPoint] = useState<Location | null>(null);
   const [observations, setObservations] = useState<Observation[]>([]);
 
+  // Save the observation to the server
   const onSaveObservation = async (observation: string) => {
     if (currentPoint !== null) {
       await saveObservation({
